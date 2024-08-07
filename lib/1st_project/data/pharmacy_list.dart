@@ -1,0 +1,58 @@
+import 'package:batch_bhutan/1st_project/model/pharmacy_model.dart';
+
+List<MedicineShopModel> allMedicineShopData=[
+  MedicineShopModel(
+    shopUrl: "assets/image/medicine_shop5.webp",
+    shopName: "Denyud Enterprise",
+    aboutShop: "Denyud Enterprise is a well-known shop located in Thimphu, Bhutan. It’s recognized for offering a variety of products and services. While the specifics can vary, Denyud Enterprise generally provides items like electronics, household goods, and possibly office supplies.",
+    location: "Thimphu",
+    email: "sherzavl@gmail.com",
+    rating: "⭐ 5",
+    contactNo: 17119430,
+  ),
+  MedicineShopModel(
+    shopUrl: "assets/image/medicine_shop4.jpg",
+    shopName: "Sam Enterprise",
+    aboutShop: "Sam Enterprise is a retail shop located in Thimphu, Bhutan. It is known for providing a range of products and services, including electronics, household goods, and possibly other items like stationery or office supplies.",
+    location: "Thimphu",
+    email: "symsubba07@gmail.com",
+    rating: "⭐ 4",
+    contactNo: 17454587,
+  ),
+  MedicineShopModel(
+    shopUrl: "assets/image/medicine_shop2.jpg",
+    shopName: "Sersang Agencies",
+    aboutShop: "Sersang Agencies is a retail and distribution shop located in Phuentsholing, Bhutan. Phuentsholing is a bustling town near the Indian border, and Sersang Agencies serves as a key business hub in the area.",
+    location: "Phuentsholing",
+    email: "karmadukpa75@gmail.com",
+    rating: "⭐ 3",
+    contactNo: 17607106,
+  ),
+  MedicineShopModel(
+    shopUrl: "assets/image/medicine_shop1.webp",
+    shopName: "Complete Science",
+    aboutShop: "Complete Science is a retail shop located in Samtse, Bhutan. As the name suggests, the store likely specializes in science-related products. This could include educational materials, laboratory equipment, scientific instruments.",
+    location: "Samtse",
+    email: "completescience@gmail.com",
+    rating: "⭐ 4",
+    contactNo: 77111255,
+  ),
+  MedicineShopModel(
+    shopUrl: "assets/image/kuen.jpg",
+    shopName: "Noble Pharmaceutical",
+    aboutShop: "Noble Pharmaceutical is a business located in Gelephu, Bhutan. It is involved in the pharmaceutical sector, providing a range of medical and health-related products. This typically includes prescription medications, over-the-counter drugs, health supplements.",
+    location: "Gelephu",
+    email: "semon85@gmail.com",
+    rating: "⭐ 3",
+    contactNo: 77171516,
+  ),
+  MedicineShopModel(
+    shopUrl: "assets/image/B.D Commercial shop.jpg",
+    shopName: "B.D Commercial",
+    aboutShop: "B.D. Commercial is a shop located in Paro, Bhutan. It is known for offering a variety of products and services. While specific details about their inventory can vary, such shops typically carry items such as electronics, household goods, and possibly stationery or office supplies.",
+    location: "Paro",
+    email: "bdcommercial@gmail.com",
+    rating: "⭐ 5",
+    contactNo: 77448952,
+  ),
+];
