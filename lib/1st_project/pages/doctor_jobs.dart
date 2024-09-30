@@ -151,7 +151,7 @@ class HomeDoctors extends StatelessWidget {
                              crossAxisAlignment: CrossAxisAlignment.start,
                              children: [
                                Container(
-                                   width: MediaQuery.of(context).size.width*0.6,
+                                   width: MediaQuery.of(context).size.width*0.5,
                                    child: Text("${jobs[index].name}",style: Styal(20),maxLines: 2,)),
                                Center(child: Text("${jobs[index].doc}",style: Styal(17,primaryColor),)),
                              ],

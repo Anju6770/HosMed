@@ -91,7 +91,7 @@ class _detailsOfDoctorsState extends State<detailsOfDoctors> {
                   child: Column(
                     children: [
                       Container(
-                        height: 440,
+                        height: MediaQuery.of(context).size.height*0.6,
                         width: double.infinity,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -99,8 +99,8 @@ class _detailsOfDoctorsState extends State<detailsOfDoctors> {
                             Row(
                               children: [
                                 Container(
-                                  height: 200,
-                                  width: 200,
+                                  height: MediaQuery.of(context).size.height*0.23,
+                                  width: MediaQuery.of(context).size.width*0.45,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(20),
                                       image: DecorationImage(image: AssetImage("${widget.category[index].image}")),
@@ -110,8 +110,8 @@ class _detailsOfDoctorsState extends State<detailsOfDoctors> {
                                     mainAxisAlignment: MainAxisAlignment.end,
                                     children: [
                                       Container(
-                                        height: 29,
-                                        width: 160,
+                                        height: MediaQuery.of(context).size.height*0.04,
+                                        width: MediaQuery.of(context).size.width*0.4,
                                         decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(10),
                                           color: forthColor,
@@ -234,8 +234,8 @@ class _detailsOfDoctorsState extends State<detailsOfDoctors> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Container(
-                                  height: 15,
-                                  width:345,
+                                  height: MediaQuery.of(context).size.height*0.02,
+                                  width:MediaQuery.of(context).size.width*0.87,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.only(bottomLeft: Radius.elliptical(500,100),bottomRight: Radius.elliptical(500,100),),
                                     color: primaryColor.withOpacity(0.5),

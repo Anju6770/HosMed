@@ -250,7 +250,7 @@ class _AmbulState extends State<Ambul> {
                           },
                           child: Container(
                             height: 40,
-                            width: 180,
+                            width: MediaQuery.of(context).size.width*0.45,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(15),
                                 border: Border.all(color: Colors.black),

@@ -86,7 +86,7 @@ class medicen extends StatelessWidget {
                         crossAxisCount: 2,
                         crossAxisSpacing: 4,
                         mainAxisSpacing: 4,
-                        childAspectRatio:0.55),
+                        childAspectRatio:0.5),
                     itemBuilder: (context, index) {
                       return Card(
                         elevation: 5,
@@ -135,34 +135,35 @@ class medicen extends StatelessWidget {
                                     showDialog(
                                         context: context,
                                         builder: (context) {
-                                          return Row(
-                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                            children: [
-                                              AlertDialog(
-                                                title: Text("Do you want to buy?"),
-                                                actions: [
-                                                  TextButton(
-                                                      onPressed: () {
-                                                        Navigator.pop(context);
-                                                      },
-                                                      child: Text(
-                                                        "Yes",
-                                                        style: Styal(19),
-                                                      )),
-                                                  SizedBox(
-                                                    width: 120,
-                                                  ),
-                                                  TextButton(
-                                                      onPressed: () {
-                                                        Navigator.pop(context);
-                                                      },
-                                                      child: Text(
-                                                        "No",
-                                                        style: Styal(19),
-                                                      )),
-                                                ],
-                                              ),
-                                            ],
+                                          return Container(
+                                            height: MediaQuery.of(context).size.height*0.4,
+                                            width: MediaQuery.of(context).size.width*0.9,
+                                            child: AlertDialog(
+                                              title: Text("Do you want to buy?"),
+                                              actions: [
+                                                Row(
+                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                  children: [
+                                                    TextButton(
+                                                        onPressed: () {
+                                                          Navigator.pop(context);
+                                                        },
+                                                        child: Text(
+                                                          "Yes",
+                                                          style: Styal(19),
+                                                        )),
+                                                    TextButton(
+                                                        onPressed: () {
+                                                          Navigator.pop(context);
+                                                        },
+                                                        child: Text(
+                                                          "No",
+                                                          style: Styal(19),
+                                                        )),
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
                                           );
                                         });
                                   },

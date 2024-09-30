@@ -104,37 +104,37 @@ class _HomeMineState extends State<HomeMine> {
                 showDialog(
                     context: context,
                     builder: (context) {
-                      return Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          AlertDialog(
-                            title: Text("Do you want to Log Out?"),
-                            actions: [
-                              TextButton(
-                                  onPressed: () {
-                                    Navigator.of(context).push(
-                                        MaterialPageRoute(
-                                            builder: (builder) =>
-                                                Carousel()));
-                                  },
-                                  child: Text(
-                                    "Yes",
-                                    style: Styal(19),
-                                  )),
-                              SizedBox(
-                                width: 120,
-                              ),
-                              TextButton(
-                                  onPressed: () {
-                                    Navigator.pop(context);
-                                  },
-                                  child: Text(
-                                    "No",
-                                    style: Styal(19),
-                                  ))
-                            ],
-                          ),
-                        ],
+                      return Container(
+                        height: MediaQuery.of(context).size.height*0.4,
+                        width: MediaQuery.of(context).size.width*0.9,
+                        child: AlertDialog(
+                          title: Text("Do you want to Log Out?"),
+                          actions: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                TextButton(
+                                    onPressed: () {
+                                      Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                              builder: (builder) =>
+                                                  Carousel()));
+                                    }, child: Text(
+                                      "Yes",
+                                      style: Styal(19),
+                                    )),
+                                TextButton(
+                                    onPressed: () {
+                                      Navigator.pop(context);
+                                    },
+                                    child: Text(
+                                      "No",
+                                      style: Styal(19),
+                                    )),
+                              ],
+                            )
+                          ],
+                        ),
                       );
                     });
               },

@@ -63,8 +63,8 @@ class hospitalProject extends StatelessWidget {
                       Icon(Icons.location_pin,size: 26,color: primaryColor,),
                       SizedBox(width: 10,),
                       Container(
-                          width: MediaQuery.of(context).size.width*0.8,
-                          child: Text("${homeModel.location}",style: Styal(22,),maxLines: 3,)),
+                          width: MediaQuery.of(context).size.width*0.7,
+                          child: Text("${homeModel.location}",style: Styal(20,),maxLines: 3,)),
                     ],
                   ),
                   SizedBox(height: 10,),
